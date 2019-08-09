@@ -1,13 +1,17 @@
-from behave import given, when, then
+from behave import *
+import unittest
+from actionwords import Actionwords
+
+use_step_matcher('re')
 
 @given('we have behave installed')
 def step_impl(context):
-    pass
+    context.actionwords.we_have_behave_installed()
 
 @when('we implement a test')
 def step_impl(context):
-    assert True is not False
+    context.actionwords.we_implement_a_test()
 
 @then('trial will test it for us!')
 def step_impl(context):
-    assert context.failed is False
+    context.actionwords.trial_will_test_it_for_us()
