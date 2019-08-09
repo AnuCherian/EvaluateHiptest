@@ -6,9 +6,10 @@ before_install:
   - rvm install 2.5
   - rvm use 2.5
   - gem install hiptest-publisher
-
+  - hiptest-publisher -c behave.conf --only=tests --test-run-id=288962
+  
 script:
  - behave --format json -o results/results.json
 
 after_script:
- - hiptest-publisher -c behave.conf --push=results/results.json --test-run-id 288962 --push-format=junit --token=$SECRET_TOKEN
+ - hiptest-publisher -c behave.conf --push=results/results.json --test-run-id=288962 --push-format=junit
