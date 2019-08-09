@@ -1,4 +1,15 @@
 dist: xenial   # required for Python >= 3.7
 language: python
+
+before_install:
+  - pip install behave
+  - rvm install 2.2
+  - rvm use 2.2
+  - gem install hiptest-publisher
+  - "hiptest-publisher -c behave.conf --token=$SECRET_TOKEN --only=features,step_definitions --test-run-id=16134"
+
 script:
-  - behave
+ - behave --format json -o results/results.json
+
+after_script:
+ - hiptest-publisher -c behave.conf --token=$SECRET_TOKEN --push=results/results.json --test-run-id=16134
