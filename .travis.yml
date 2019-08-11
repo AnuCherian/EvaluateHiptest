@@ -6,6 +6,7 @@ before_install:
   - rvm install 2.5
   - rvm use 2.5
   - gem install hiptest-publisher
+  - hiptest-publisher --config=behave.conf --test-run-id=137606 --without=actionwords
   
 script:
  - behave --format json -o results/results.json
