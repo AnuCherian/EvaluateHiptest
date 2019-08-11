@@ -1,4 +1,5 @@
 # encoding: UTF-8
+from behave import *
 
 class Actionwords:
     def __init__(self, test):

@@ -1,5 +1,4 @@
 from behave import *
-from actionwords import Actionwords
 
 use_step_matcher('re')
 
