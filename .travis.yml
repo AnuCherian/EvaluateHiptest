@@ -12,4 +12,4 @@ script:
  - behave --format json -o results/results.json
 
 after_script:
- - hiptest-publisher --config=behave.conf --push=results/results.json --test-run-id=137606 --push-format=junit
+ - hiptest-publisher --config=behave.conf --push=results/results.json --test-run-id=137606 --push-format=cucumber-json
