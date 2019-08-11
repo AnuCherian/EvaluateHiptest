@@ -9,7 +9,7 @@ before_install:
   - hiptest-publisher --config=behave.conf --test-run-id=288962 --without=actionwords
   
 script:
- - behave --format json -o ./results/results.json
+ - behave --format json -o results.json
 
 after_script:
- - hiptest-publisher --config=behave.conf --push=./results/results.json --test-run-id=288962 --push-format=cucumber-json
+ - hiptest-publisher --config=behave.conf --push=results.json --test-run-id=288962 --push-format=cucumber-json
