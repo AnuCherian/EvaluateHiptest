@@ -18,11 +18,11 @@ class Actionwords:
 
     def the_ninja_has_a(self, achievement_level = ""):
         self.sut.with_ninja_level = achievement_level
-        assert( self.sut.with_ninja_level) is not None
+        assert( self.sut.with_ninja_level is not None) 
 
     def the_ninja_should(self, reaction = ""):      
         assert(self.sut.decision(self) == reaction) is True
         
     def attacked_by(self, opponent_role = ""):
-         self.sut.opponent = opponent_role
-        assert(self.sut.opponent) is not None
+        self.sut.opponent = opponent_role
+        assert(self.sut.opponent is not None) 
