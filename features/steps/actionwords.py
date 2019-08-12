@@ -1,4 +1,5 @@
 # encoding: UTF-8
+from src.step_tutorial02 import NinjaFight
 
 class Actionwords:
     def __init__(self, ninja_param = None):
@@ -15,10 +16,12 @@ class Actionwords:
         pass
 
     def the_ninja_has_a(self, achievement_level = ""):
-        pass
+        NinjaFight.with_ninja_level = achievement_level
+        assert(NinjaFight.with_ninja_level) is not None
 
-    def the_ninja_should(self, reaction = ""):
-        pass
-
+    def the_ninja_should(self, reaction = ""):      
+        assert(NinjaFight.decision(self) == reaction) is True
+        
     def attacked_by(self, opponent_role = ""):
-        pass
+        NinjaFight.opponent = opponent_role
+        assert(NinjaFight.opponent) is not None
