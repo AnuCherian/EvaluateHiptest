@@ -21,7 +21,7 @@ class Actionwords:
         assert( self.sut.with_ninja_level is not None) 
 
     def the_ninja_should(self, reaction = ""):      
-        assert(self.sut.decision(self) == reaction) is True
+        assert(self.sut.decision() == reaction) is True
         
     def attacked_by(self, opponent_role = ""):
         self.sut.opponent = opponent_role
