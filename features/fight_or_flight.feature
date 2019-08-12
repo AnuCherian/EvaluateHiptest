@@ -2,9 +2,9 @@ Feature: Fight or Flight
 
 
   Scenario Outline: Fight or Flight (<hiptest-uid>)
-    Given the ninja has a ""
-    When attacked by  ""
-    Then the ninja should ""
+    Given the ninja has a "<achievement_level>"
+    When attacked by  "<opponent_role>"
+    Then the ninja should "<reaction>"
 
     Examples:
       | achievement_level | opponent_role | reaction | hiptest-uid |

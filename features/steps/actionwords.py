@@ -3,7 +3,6 @@ from src.step_tutorial02 import NinjaFight
 # encoding: UTF-8
 class Actionwords:
     def __init__(self, ninja_param = None):
-        self.ninja_param = ninja_param
         self.sut = NinjaFight()
         pass
 
@@ -21,10 +20,6 @@ class Actionwords:
         assert( self.sut.with_ninja_level is not None) 
 
     def the_ninja_should(self, reaction = ""): 
-        print(self.sut.with_ninja_level)
-        print(self.sut.opponent)
-        print(reaction)
-        print(self.sut.decision())     
         assert(self.sut.decision() == reaction)
         
     def attacked_by(self, opponent_role = ""):
