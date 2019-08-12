@@ -14,20 +14,11 @@ class Actionwords:
     def trial_will_test_it_for_us(self):
         pass
 
-    def the_ninja_has_a_third_level_blackbelt(self):
+    def the_ninja_has_a(self, achievement_level = ""):
         pass
 
-    def attacked_by_a_samurai(self):
+    def the_ninja_should(self, reaction = ""):
         pass
 
-    def hen_the_ninja_should_engage_the_opponent(self):
-        pass
-
-    def the_ninja_should_engage_the_opponent(self):
-        pass
-
-    def attacked_by_chuck_norris(self):
-        pass
-
-    def the_ninja_should_run_for_his_life(self):
+    def attacked_by(self, opponent_role = ""):
         pass

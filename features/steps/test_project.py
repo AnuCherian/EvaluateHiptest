@@ -14,18 +14,16 @@ class TestMyFirstTest(unittest.TestCase):
         # Then trial will test it for us!
         self.actionwords.trial_will_test_it_for_us()
 
-    def test_weaker_opponent(self):
-        # Given the ninja has a third level black-belt
-        self.actionwords.the_ninja_has_a_third_level_blackbelt()
-        # When attacked by a samurai
-        self.actionwords.attacked_by_a_samurai()
-        # Then the ninja should engage the opponent
-        self.actionwords.the_ninja_should_engage_the_opponent()
+    def fight_or_flight(self, achievement_level, opponent_role, reaction):
+        # Given the ninja has a ""
+        self.actionwords.the_ninja_has_a()
+        # When attacked by ""
+        self.actionwords.attacked_by()
+        # Then the ninja should ""
+        self.actionwords.the_ninja_should()
 
-    def test_stronger_opponent(self):
-        # Given the ninja has a third level black-belt
-        self.actionwords.the_ninja_has_a_third_level_blackbelt()
-        # When attacked by Chuck Norris
-        self.actionwords.attacked_by_chuck_norris()
-        # Then the ninja should run for his life
-        self.actionwords.the_ninja_should_run_for_his_life()
+    def test_Fight_or_Flight_fight(self):
+        self.fight_or_flight(achievement_level = 'third level black-belt', opponent_role = 'samurai', reaction = 'engage the opponent')
+
+    def test_Fight_or_Flight_flight(self):
+        self.fight_or_flight(achievement_level = 'third level black-belt', opponent_role = 'Chuck Norris', reaction = 'run for his life')
