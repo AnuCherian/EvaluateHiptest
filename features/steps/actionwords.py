@@ -1,7 +1,8 @@
 # encoding: UTF-8
 
 class Actionwords:
-    def __init__(self):
+    def __init__(self, ninja_param = None):
+        self.ninja_param = ninja_param
         pass
 
     def we_have_behave_installed(self):
