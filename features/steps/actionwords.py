@@ -20,7 +20,11 @@ class Actionwords:
         self.sut.with_ninja_level = achievement_level
         assert( self.sut.with_ninja_level is not None) 
 
-    def the_ninja_should(self, reaction = ""):      
+    def the_ninja_should(self, reaction = ""): 
+        print(self.sut.with_ninja_level)
+        print(self.sut.opponent)
+        print(reaction)
+        print(self.sut.decision())     
         assert(self.sut.decision() == reaction)
         
     def attacked_by(self, opponent_role = ""):
