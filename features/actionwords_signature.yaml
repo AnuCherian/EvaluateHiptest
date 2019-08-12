@@ -11,27 +11,18 @@
   uid: 6cb0710a-0731-4e04-8011-673758292419
   parameters: []
   body_hash: d41d8cd98f00b204e9800998ecf8427e
-  - name: the ninja has a third level black-belt
+- name: the ninja has a
   uid: ab1f273c-3e0e-4227-8e41-f07b3129fabb
-  parameters: []
+  parameters:
+  - name: achievement_level
   body_hash: d41d8cd98f00b204e9800998ecf8427e
-- name: attacked by a samurai
-  uid: 479cd848-67b6-4eb3-b42a-cc4b142460cb
-  parameters: []
-  body_hash: d41d8cd98f00b204e9800998ecf8427e
-- name: hen the ninja should engage the opponent
-  uid: 90aacb91-7bdd-48d2-a941-9ec56c81f818
-  parameters: []
-  body_hash: d41d8cd98f00b204e9800998ecf8427e
-- name: the ninja should engage the opponent
+- name: the ninja should
   uid: 7b8b581c-2163-4e6f-8300-efb01c8c3a2a
-  parameters: []
+  parameters:
+  - name: reaction
   body_hash: d41d8cd98f00b204e9800998ecf8427e
-- name: attacked by Chuck Norris
+- name: 'attacked by '
   uid: 41b41608-007a-4a91-911e-db55ae7ebec7
-  parameters: []
-  body_hash: d41d8cd98f00b204e9800998ecf8427e
-- name: the ninja should run for his life
-  uid: aa8c4475-81ec-4374-a730-07657add4aab
-  parameters: []
+  parameters:
+  - name: opponent_role
   body_hash: d41d8cd98f00b204e9800998ecf8427e

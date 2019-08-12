@@ -1,9 +1,8 @@
 # encoding: UTF-8
-from behave import *
 
 class Actionwords:
-    def __init__(self, test):
-        self.test = test
+    def __init__(self):
+        pass
 
     def we_have_behave_installed(self):
         pass
