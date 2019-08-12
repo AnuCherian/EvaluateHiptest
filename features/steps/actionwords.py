@@ -1,9 +1,10 @@
-# encoding: UTF-8
-from src.step_tutorial02 import NinjaFight as NinjaFight1
+from src.step_tutorial02 import NinjaFight
 
+# encoding: UTF-8
 class Actionwords:
     def __init__(self, ninja_param = None):
         self.ninja_param = ninja_param
+        self.sut = NinjaFight()
         pass
 
     def we_have_behave_installed(self):
@@ -16,12 +17,12 @@ class Actionwords:
         pass
 
     def the_ninja_has_a(self, achievement_level = ""):
-        NinjaFight1.with_ninja_level = achievement_level
-        assert(NinjaFight1.with_ninja_level) is not None
+        self.sut.with_ninja_level = achievement_level
+        assert( self.sut.with_ninja_level) is not None
 
     def the_ninja_should(self, reaction = ""):      
-        assert(NinjaFight1.decision(self) == reaction) is True
+        assert(self.sut.decision(self) == reaction) is True
         
     def attacked_by(self, opponent_role = ""):
-        NinjaFight1.opponent = opponent_role
-        assert(NinjaFight1.opponent) is not None
+         self.sut.opponent = opponent_role
+        assert(self.sut.opponent) is not None

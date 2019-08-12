@@ -1,3 +1,4 @@
+
 class NinjaFight(object):
     """
     Domain model for ninja fights.
@@ -12,8 +13,8 @@ class NinjaFight(object):
         """
         Business logic how a Ninja should react to increase his survival rate.
         """
-        #assert self.with_ninja_level is not None
-        #assert self.opponent is not None
+        assert self.with_ninja_level is not None
+        assert self.opponent is not None
         if self.opponent == "Chuck Norris":
             return "run for his life"
         if "black-belt" in self.with_ninja_level:
