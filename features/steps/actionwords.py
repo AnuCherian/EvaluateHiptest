@@ -20,7 +20,7 @@ class Actionwords:
         assert(NinjaFight.with_ninja_level) is not None
 
     def the_ninja_should(self, reaction = ""):      
-        assert(NinjaFight.decision(self) == reaction) is True
+        assert(NinjaFight.decision() == reaction) is True
         
     def attacked_by(self, opponent_role = ""):
         NinjaFight.opponent = opponent_role
