@@ -1,15 +1,16 @@
 dist: xenial   # required for Python >= 3.7
 language: python
+python: 2.7
 
 before_install:
   - pip install behave
   - rvm install 2.5
   - rvm use 2.5
   - gem install hiptest-publisher
-  - hiptest-publisher --config=behave.conf --test-run-id=289859 --without=actionwords
+  - hiptest-publisher --config=behave.conf --test-run-id=289862 --without=actionwords
   
 script:
  - behave --format json -o results.json
 
 after_script:
- - hiptest-publisher --config=behave.conf --push=results.json --test-run-id=289859 --push-format=cucumber-json
+ - hiptest-publisher --config=behave.conf --push=results.json --test-run-id=289862 --push-format=cucumber-json
